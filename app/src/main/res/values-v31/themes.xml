@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.MainActivityTheme" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBackground">@color/primary_color</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration">2000</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="postSplashScreenTheme">@style/Theme.ECommerce</item>
+    </style>
+</resources>
