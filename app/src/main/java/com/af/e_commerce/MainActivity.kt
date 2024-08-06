@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //test crashes with firebase
         findViewById<TextView>(R.id.text_crash).setOnClickListener {
             throw RuntimeException("Test Crash")
         }
