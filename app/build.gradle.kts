@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -47,5 +49,14 @@ dependencies {
 
     //splash screen
     implementation("androidx.core:core-splashscreen:1.0.0")
+
+    //firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-crashlytics")
+
+    //third party libraries .. for network connection
+    implementation("com.github.pwittchen:reactivenetwork-rx2:3.0.8")
+
 
 }
