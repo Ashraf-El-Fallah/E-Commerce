@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AnticipateInterpolator
-import android.widget.TextView
 import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
@@ -17,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //test crashes with firebase
-        findViewById<TextView>(R.id.text_crash).setOnClickListener {
-            throw RuntimeException("Test Crash")
-        }
+//        findViewById<TextView>(R.id.text_crash).setOnClickListener {
+//            throw RuntimeException("Test Crash")
+//        }
     }
 
     private fun initSplashScreen() {
